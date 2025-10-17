@@ -3,9 +3,9 @@
 *.exe
 *.out
 
-# ignore temporary or local config files
-# config.yaml
-# config.yml
+ignore temporary or local config files
+config.yaml
+config.yml
 
 # Ignore general system or editor files
 .DS_Store
