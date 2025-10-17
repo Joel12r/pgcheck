@@ -1,8 +1,12 @@
-# Go binaries
-
-pgcheck
+# Ignore Go build outputs
+/pgcheck
 *.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+*.out
+
+ignore temporary or local config files
+config.yaml
+config.yml
+
+# Ignore general system or editor files
+.DS_Store
+*.log
