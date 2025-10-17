@@ -1,0 +1,8 @@
+# Go binaries
+
+pgcheck
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib

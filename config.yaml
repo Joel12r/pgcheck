@@ -1,0 +1,10 @@
+postgres:
+  host: "localhost"
+  port: 5432
+  database: "parrot"
+  username: "postgres"
+  password: "parrot1234"
+
+
+version:
+  min_major: 16
