@@ -1,22 +1,22 @@
-# 🐘 pgcheck
+# 🐘 # pgversion
 
-A lightweight Go utility for checking PostgreSQL server versions.
+A small Go library for verifying that a connected PostgreSQL instance meets a **minimum required version**.
 
-`pgcheck` connects to a PostgreSQL instance, retrieves the version using `SELECT version()`, and validates it against a configurable minimum version requirement.  
-It’s designed for use across multiple applications to enforce a consistent PostgreSQL version policy.
+This library is useful for enforcing version requirements across multiple services or projects, ensuring developers and CI environments use the correct PostgreSQL version.
 
 ---
 
 ## 🚀 Features
 
-- Connects to PostgreSQL and retrieves version info  
-- Validates against a user-defined minimum version (e.g., 16, 17)  
-- Can load database credentials from a YAML config file  
-- Reusable as both a CLI tool and Go package  
+- Connects to PostgreSQL via a standard DSN.  
+- Runs `SELECT version()` and extracts the **major version**.  
+- Compares it against a **minimum version** you specify.  
+- Returns an error if the version is too low.  
+- Lightweight and dependency-free (only uses the official `lib/pq` driver).
 
 ---
 
 ## 📦 Installation
 
 ```bash
-go get github.com/josephmoyenda/pgcheck
+go get github.com/pgversion
