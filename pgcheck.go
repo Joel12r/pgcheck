@@ -1,4 +1,4 @@
-package pgversion
+package pgcheck
 
 import (
 	"database/sql"
