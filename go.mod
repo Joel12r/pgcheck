@@ -1,5 +1,5 @@
-module github.com/pgversion
+module github.com/Joel12r/pgcheck
 
 go 1.24.0
 
-require github.com/lib/pq v1.10.9 // indirect
+require github.com/lib/pq v1.10.9
